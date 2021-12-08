@@ -1,5 +1,5 @@
 org.springframework.nativex.type.NativeConfiguration=\
-  com.example.extensible.ExtensibleTypeSystemNativeConfiguration
+  com.example.extensible.ExtensibleNativeConfiguration
 org.springframework.aot.context.bootstrap.generator.infrastructure.nativex.BeanNativeConfigurationProcessor=\
   com.example.extensible.ExtensibleBeanNativeConfigurationProcessor
 org.springframework.aot.context.bootstrap.generator.infrastructure.nativex.BeanFactoryNativeConfigurationProcessor=\
