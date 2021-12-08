@@ -29,3 +29,54 @@ NOTES: cut
  * `BeanNativeConfigurationProcessor` 
 
 
+## Performance 
+
+Run `ni.sh` with the following syntax in each of the `traditional`, `reactive`, and `batch` modules, like this: 
+
+`ni.sh batch` while in the `batch` module, `ni.sh traditional` in the `traditional` module, etc.
+
+It'll capture startup time and RSS for the JRE, AOT, and native versions of the binary.
+
+---------------------------
+reactive
+native
+0.061
+RSS memory (PID: 12984): 57.8M
+
+jre
+1.727
+RSS memory (PID: 13028): 472.3M
+
+aot
+1.513
+RSS memory (PID: 13056): 493.0M
+
+---------------------------
+traditional
+native
+0.155
+RSS memory (PID: 14161): 127.2M
+
+jre
+3.616
+RSS memory (PID: 14188): 649.9M
+
+aot
+2.802
+RSS memory (PID: 14226): 647.5M
+
+---------------------------
+batch
+native
+0.065
+RSS memory (PID: 18382): 83.8M
+
+jre
+1.387
+RSS memory (PID: 18413): 460.9M
+
+aot
+1.066
+RSS memory (PID: 18443): 419.0M
+
+
