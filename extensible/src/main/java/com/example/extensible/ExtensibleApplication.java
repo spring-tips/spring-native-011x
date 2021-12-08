@@ -1,19 +1,21 @@
 package com.example.extensible;
 
+import lombok.SneakyThrows;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.nativex.hint.JdkProxyHint;
 
 
 @SpringBootApplication
 public class ExtensibleApplication {
 
+	@SneakyThrows
 	public static void main(String[] args) {
 		SpringApplication.run(ExtensibleApplication.class, args);
+		Thread.currentThread().join();
 	}
 
 	@Bean
