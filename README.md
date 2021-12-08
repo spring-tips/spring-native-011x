@@ -9,10 +9,13 @@
 
 ## Outline 
 
-* getting the bits: Spring Native 0.11.snapshots 
-* a reactive, non-blocking http app talking to an embedded SQL DB
-* introducing the new AOT engine. You can preflight what its doing with `spring-aot:generate`
-* free performance bump even on the JRE:  `-DspringAot=true`
+NOTES: cut
+
+* TODO installing GraalVM and the `native-image` CLI
+* (one.mov: cut everything after 13:55 ) getting the bits: Spring Native 0.11.snapshots 
+* (one.mov: cut everything after 13:55 ) a reactive, non-blocking http app talking to an embedded SQL DB
+* (two.mov) introducing the new AOT engine. You can preflight what its doing with `spring-aot:generate`. `spring.factories`. functional bean registration. it creates a version of the app without running the beans and uses that to inform the generation of hints. we run the context without starting anything. 
+* (two.mov) free performance bump even on the JRE:  `-DspringAot=true`
 * the results are astonishing! 
  * look at reactive apps (rss, startup: jre, native)
  * look at batch(rss, startup: jre, native)
