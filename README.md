@@ -31,11 +31,11 @@ NOTES: cut
 
 ## Performance 
 
-Run `ni.sh` with the following syntax in each of the `traditional`, `reactive`, and `batch` modules: 
+Run `measure.sh` with the following syntax in each of the `traditional`, `reactive`, and `batch` modules: 
 
-`ni.sh <MODULE>` 
+`measure.sh <MODULE>` 
 
-So, if you were in the `traditional` module, you'd run `ni.sh traditional`. In the `batch` module, you'd run `ni.sh batch`. You get the idea.
+So, if you were in the `traditional` module, you'd run `measure.sh traditional`. In the `batch` module, you'd run `measure.sh batch`. You get the idea.
 
 It'll capture startup time and RSS for the JRE, AOT, and native versions of the application.
 
