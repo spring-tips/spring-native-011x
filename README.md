@@ -31,11 +31,13 @@ NOTES: cut
 
 ## Performance 
 
-Run `ni.sh` with the following syntax in each of the `traditional`, `reactive`, and `batch` modules, like this: 
+Run `ni.sh` with the following syntax in each of the `traditional`, `reactive`, and `batch` modules: 
 
-`ni.sh batch` while in the `batch` module, `ni.sh traditional` in the `traditional` module, etc.
+`ni.sh <MODULE>` 
 
-It'll capture startup time and RSS for the JRE, AOT, and native versions of the binary.
+So, if you were in the `traditional` module, you'd run `ni.sh traditional`. In the `batch` module, you'd run `ni.sh batch`. You get the idea.
+
+It'll capture startup time and RSS for the JRE, AOT, and native versions of the application.
 
 ---------------------------
 reactive
